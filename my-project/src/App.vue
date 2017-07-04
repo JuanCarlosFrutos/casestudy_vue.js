@@ -1,21 +1,24 @@
 <template>
   <div id="app">
-<!--     <img src="./assets/logo.png"> -->
     <top></top>
-<!--     <router-view></router-view> -->
     <feed></feed>
+    <router-view class="view"></router-view>
+<!--   <addForm></addForm> -->
   </div>
 </template>
 
 <script>
-  import company from './components/company'
+  import companySearch from './components/companySearch'
   import top from './components/top'
   import feed from './components/feed'
+  import addForm from './components/addForm'
+
   export default {
     components: {
-      'company': company,
+      'company-search': companySearch,
       'top': top,
-      'feed': feed
+      'feed': feed,
+      'addForm': addForm
     },
     name: 'app'
   }

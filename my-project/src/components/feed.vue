@@ -1,16 +1,27 @@
 <template>
-  <div><company></company></div>
+  <div>
+
+    <ol>
+      <company-search></company-search>
+    </ol>
+    <button>Add</button>
+  </div>
 </template>
 
 <script>
-import company from '@/components/company'
+import companySearch from '@/components/companySearch'
 export default {
   components: {
-    'company': company
+    'companySearch': companySearch
   },
   name: 'feed',
   data () {
     return {
+      todos: [
+        { text: 'Learn JavaScript' },
+        { text: 'Learn Vue' },
+        { text: 'Build something awesome' }
+      ],
       msg: 'Hola'
     }
   }

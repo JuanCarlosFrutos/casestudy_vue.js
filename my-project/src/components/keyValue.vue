@@ -1,15 +1,16 @@
 <template>
   <div>
-    <h1>{{ msg }}</h1>
+    Key:<input type="text" name="fname">
+    Value:<input type="text" name="lname">
   </div>
 </template>
 
 <script>
 export default {
-  name: 'company',
+  name: 'keyValue',
   data () {
     return {
-      msg: 'compañia'
+      counter: 0
     }
   }
 }
