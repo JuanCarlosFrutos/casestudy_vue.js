@@ -30,6 +30,10 @@ export default {
   data () {
     return {
       range: 5
+      // names: [
+      //   {name: "manue"}
+      //   {name: "josue"}
+      // ]
     }
   }
 }

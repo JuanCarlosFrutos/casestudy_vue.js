@@ -2,7 +2,7 @@
   <main-layout>
 	  <div>
 	      <div v-for="n in range">
-	        <key-value></key-value>
+	        <key-value key="test"></key-value>
 	      </div>
 
 	      <button v-on:click="addKeyValue">+</button>

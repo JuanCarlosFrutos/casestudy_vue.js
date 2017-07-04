@@ -8,6 +8,7 @@
 
 <script>
 export default {
+  props: ['key'] ,
   name: 'keyValue',
   data () {
     return {
