@@ -1,7 +1,8 @@
 <template>
-  <div>
-    Key:<input type="text" name="fname">
-    Value:<input type="text" name="lname">
+  <div id=company>
+    <label>Key:</label><input type="text" name="fname">
+    <label>Value:</label><input type="text" name="lname">
+    <slot></slot>
   </div>
 </template>
 
@@ -18,6 +19,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+#company{
+  background-color: red;
+  border: solid;
+}
 </style>
-

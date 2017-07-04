@@ -1,16 +1,8 @@
 <template>
-    <form method=GET action="http://www.google.es/search">
-    <fieldset>
-        <input type=hidden name=ie value=UTF-8 />
-        <input type=hidden name=oe value=UTF-8 />
-                        
-        <input type=text id="s" name="q" value="" size="50" />
-        <font size=-1>
-                        
-        <input type=hidden name=domains value="http://www.uterra.com" /><br>
-                        
-        <INPUT type=submit  id="x" name=btnG VALUE="Buscar" />
-        </font>
+    <form method=GET action="">
+    <fieldset>       
+        <input type=text id="s" name="q" value="" size="50" />                             
+        <input type=submit  id="x" name=btnG value="Go!" />
     </fieldset>
     </form> 
 </template>

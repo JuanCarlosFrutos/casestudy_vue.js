@@ -1,30 +1,16 @@
 <template>
   <div>
-
-    <ol>
-      <company-search></company-search>
-    </ol>
-    <button>Add</button>
+      <key-value><button>Edit</button></key-value>
   </div>
 </template>
 
 <script>
-import companySearch from '@/components/companySearch'
+import keyValue from './keyValue.vue'
 export default {
-  components: {
-    'companySearch': companySearch
+  component: {
+    keyValue
   },
-  name: 'feed',
-  data () {
-    return {
-      todos: [
-        { text: 'Learn JavaScript' },
-        { text: 'Learn Vue' },
-        { text: 'Build something awesome' }
-      ],
-      msg: 'Hola'
-    }
-  }
+  name: 'feed'
 }
 </script>
 
