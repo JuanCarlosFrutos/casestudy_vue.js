@@ -5,9 +5,9 @@
 	        <key-value></key-value>
 	      </div>
 
-	    <button v-on:click="addKeyValue">+</button>
-	    <router-link to="/search"><button>Save</button></router-link>
-	    <router-link to="/search"><button id="pulsa">Close</button></router-link>
+	    <button id="plusbutton" v-on:click="addKeyValue">+</button>
+	    <router-link id="savebutton" to="/search"><button>Save</button></router-link>
+	    <router-link id="closebutton" to="/search"><button id="pulsa">Close</button></router-link>
 	  </div>
   </div>
 </template>

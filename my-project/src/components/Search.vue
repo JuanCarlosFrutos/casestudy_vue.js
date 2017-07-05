@@ -4,7 +4,7 @@
     <label>Search Results: {{companies.length}}</label>
     <div v-for="n in companies">
       <company :company=n>
-        <button v-on:click="edit(n)">Edit</button>
+        <button class="editbutton" v-on:click="edit(n)">Edit</button>
       </company>
     </div>
      <router-link to="/new"><button id=addbutton v-on:click="add">Add</button></router-link>
