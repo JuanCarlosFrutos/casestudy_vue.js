@@ -10,14 +10,14 @@
 export default {
   props: {
     name: {
-      type:String,
-      required: true 
+      type: String,
+      required: true
     }
   },
   name: 'keyValue',
   data () {
     return {
-      counter: 0,
+      counter: 0
     }
   }
 }

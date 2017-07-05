@@ -2,7 +2,7 @@
     <form method=GET action="">
     <fieldset>       
         <input type=text id="s" name="q" value="" size="50" />                             
-        <input type=submit  id="x" name=btnG value="Go!" />
+        <button>Go!</button>
     </fieldset>
     </form> 
 </template>

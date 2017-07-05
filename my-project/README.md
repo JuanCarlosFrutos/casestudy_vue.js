@@ -1,6 +1,6 @@
-# Vue 2.0 Simple Routing Example
+# test-routes
 
-> A simple example of routing with Vue 2.0 without using vue-router. This branch uses the raw HTML5 History API. For an example integrating a 3rd-party routing solution, see the [pagejs branch](https://github.com/chrisvfritz/vue-2.0-simple-routing-example/tree/pagejs).
+> testing vue-router
 
 ## Build Setup
 
@@ -13,6 +13,15 @@ npm run dev
 
 # build for production with minification
 npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run all tests
+npm test
 ```
 
-For a detailed explanation of the build process, read the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

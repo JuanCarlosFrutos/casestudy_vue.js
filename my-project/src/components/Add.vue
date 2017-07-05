@@ -1,27 +1,23 @@
 <template>
-  <main-layout>
+  <div>
 	  <div>
 	      <div v-for="n in range">
 	        <key-value></key-value>
 	      </div>
 
 	    <button v-on:click="addKeyValue">+</button>
-	    <button>Save</button>
-	    <v-link href="/search">Close</v-link>
+	    <router-link to="/search"><button>Save</button></router-link>
+	    <router-link to="/search"><button id="pulsa">Close</button></router-link>
 	  </div>
-  </main-layout>
+  </div>
 </template>
 
 <script>
-import keyValue from '../components/keyValue.vue'
-import MainLayout from '../layouts/Main.vue'
-import VLink from '../components/VLink.vue'
+import keyValue from './keyValue.vue'
 
 export default {
   components: {
-    keyValue,
-    MainLayout,
-    VLink
+    keyValue
   },
   name: 'addForm',
   data () {
@@ -39,7 +35,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+  
 </style>
-
-

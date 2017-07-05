@@ -12,8 +12,8 @@
 export default {
   props: {
     company: {
-      type:Object,
-      required: true 
+      type: Object,
+      required: true
     }
   },
   name: 'company',
