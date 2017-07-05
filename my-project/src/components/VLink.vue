@@ -25,13 +25,13 @@
     },
     methods: {
       go (event) {
-        event.preventDefault()
+        //event.preventDefault()
         this.$root.currentRoute = this.href
-        window.history.pushState(
-          null,
-          routes[this.href],
-          this.href
-        )
+        // window.history.pushState(
+        //   null,
+        //   routes[this.href],
+        //   this.href
+        // )
       }
     }
   }

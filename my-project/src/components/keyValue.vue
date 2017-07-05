@@ -1,6 +1,6 @@
 <template>
   <div id=company>
-    <label>Key:</label><input type="text" name="fname">
+    <label>Key:</label><input :value=name type="text" name="fname">
     <label>Value:</label><input type="text" name="lname">
     <slot></slot>
   </div>
@@ -8,11 +8,16 @@
 
 <script>
 export default {
-  props: ['key'] ,
+  props: {
+    name: {
+      type:String,
+      required: true 
+    }
+  },
   name: 'keyValue',
   data () {
     return {
-      counter: 0
+      counter: 0,
     }
   }
 }

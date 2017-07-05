@@ -2,11 +2,10 @@
   <main-layout>
 	  <div>
 	      <div v-for="n in range">
-	        <key-value key="test"></key-value>
+	        <key-value></key-value>
 	      </div>
 
-	      <button v-on:click="addKeyValue">+</button>
-
+	    <button v-on:click="addKeyValue">+</button>
 	    <button>Save</button>
 	    <v-link href="/search">Close</v-link>
 	  </div>

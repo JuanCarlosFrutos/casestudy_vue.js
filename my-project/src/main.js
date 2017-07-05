@@ -4,7 +4,12 @@ import routes from './routes'
 const app = new Vue({
   el: '#app',
   data: {
-    currentRoute: window.location.pathname
+    currentRoute: window.location.pathname,
+    names: [
+      {name: "mercedes", category: "cars"},
+      {name: "zalando" , category: "clothes"},
+      {name: "BMW" , category: "cars"}
+    ]
   },
   computed: {
     ViewComponent () {
