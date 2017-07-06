@@ -1,15 +1,15 @@
-<style src=“./add-form.scss”></style>
+<style src="./add-form.scss"></style>
 
-<template src=“./add-form.html”></template>
+<template src="./add-form.html"></template>
 
 <script>
 
-import key-value from '../key-value/key-value'
+import keyValue from '../key-value/key-value'
 
 export default {
-  
+
   components: {
-    key-value
+    keyValue
   },
   name: 'addForm',
   data () {
@@ -25,4 +25,3 @@ export default {
 }
 
 </script>
-

@@ -1,7 +1,7 @@
 
-<style src=“./comapny.scss”></style>
+<style src="./company.scss"></style>
 
-<template src=“./company.html”></template>
+<template src="./company.html"></template>
 
 <script>
 
@@ -16,5 +16,3 @@ export default {
 }
 
 </script>
-
-

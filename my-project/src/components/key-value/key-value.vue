@@ -1,6 +1,6 @@
-<style src=“./key-value.scss”></style>
+<style src="./key-value.scss"></style>
 
-<template src=“./key-value.html”></template>
+<template src="./key-value.html"></template>
 
 <script>
 
@@ -20,7 +20,7 @@ export default {
       required: true
     }
   },
-  
+
   name: 'keyValue'
 }
 </script>

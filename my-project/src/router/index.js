@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import search-form from '@/components/Search'
-import add-form from '@/components/addForm/addForm'
+import searchForm from '@/components/search-form/search-form'
+import addForm from '@/components/add-form/add-form'
 
 Vue.use(Router)
 
@@ -10,17 +10,17 @@ export default new Router({
     {
       path: '/search',
       name: 'Search',
-      component: search-form
+      component: searchForm
     },
     {
       path: '/new',
       name: 'Add',
-      component: add-form
+      component: addForm
     },
     {
       path: '/edit/:id',
       props: true,
-      component: add-form
+      component: addForm
     }
   ]
 })

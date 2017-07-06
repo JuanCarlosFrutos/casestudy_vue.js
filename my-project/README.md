@@ -1,4 +1,4 @@
-# test-routes
+# casestudy_vuejs
 
 > testing vue-router
 

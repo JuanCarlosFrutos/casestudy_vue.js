@@ -1,15 +1,15 @@
-<style src=“./search-form.css”></style>
+<style src="./search-form.scss"></style>
 
-<template src=“./search-form.html”></template>
+<template src="./search-form.html"></template>
 
 <script>
 
 import company from '../company/company'
-import search-bar from '../search-bar/search-bar'
+import searchBar from '../search-bar/search-bar'
 
 export default {
   components: {
-    search-bar,
+    searchBar,
     company
   },
   data () {

@@ -1,10 +1,10 @@
-<style src=“./search-bar.scss”></style>
+<style src="./search-bar.scss"></style>
 
-<template src=“./search-bar.html”></template>
+<template src="./search-bar.html"></template>
 
 <script>
   export default {
-    name: 'search-bar',
+    name: 'search-bar'
   }
 </script>
 
