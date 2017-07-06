@@ -20,7 +20,6 @@ export default {
       required: true
     }
   },
-
   name: 'keyValue'
 }
 </script>

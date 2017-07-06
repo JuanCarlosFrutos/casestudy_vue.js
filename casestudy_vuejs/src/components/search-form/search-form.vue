@@ -7,6 +7,10 @@
 import company from '../company/company'
 import searchBar from '../search-bar/search-bar'
 
+/*
+ * First page of app, you can search comapnies and see the results.
+ */
+
 export default {
   components: {
     searchBar,
@@ -14,7 +18,6 @@ export default {
   },
   data () {
     return {
-      range: 5,
       companies: [
         {id: 0, name: 'mercedes', category: 'cars'},
         {id: 1, name: 'zalando', category: 'clothes'},
@@ -23,6 +26,11 @@ export default {
     }
   },
   methods: {
+
+    /*
+     * When user click on edit button redirect to route /edit/:id. id identifies the company selected
+     */
+
     edit: function (n) {
       //  Vue.set(companies, name, "Z3");
       //  this.$set(this.names[1], "apellido" , "Undefined");
