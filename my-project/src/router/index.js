@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Search from '@/components/Search'
-import addForm from '@/components/add'
+import addForm from '@/components/addForm/addForm'
 
 Vue.use(Router)
 

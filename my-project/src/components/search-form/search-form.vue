@@ -1,17 +1,9 @@
-<template>
-  <div>
-    <top></top>
-    <label>Search Results: {{companies.length}}</label>
-    <div v-for="n in companies">
-      <company :company=n>
-        <button class="editbutton" v-on:click="edit(n)">Edit</button>
-      </company>
-    </div>
-     <router-link to="/new"><button id=addbutton v-on:click="add">Add</button></router-link>
-  </div>
-</template>
+<style src=“./search-form.css”></style>
+
+<template src=“./search-form.html”></template>
 
 <script>
+
 import company from './company.vue'
 import top from './top.vue'
 
@@ -42,8 +34,4 @@ export default {
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>
 
