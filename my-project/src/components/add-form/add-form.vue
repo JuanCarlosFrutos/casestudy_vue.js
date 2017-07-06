@@ -4,12 +4,12 @@
 
 <script>
 
-import keyValue from './keyValue.vue'
+import key-value from '../key-value/key-value'
 
 export default {
   
   components: {
-    keyValue
+    key-value
   },
   name: 'addForm',
   data () {

@@ -4,12 +4,12 @@
 
 <script>
 
-import company from './company.vue'
-import top from './top.vue'
+import company from '../company/company'
+import search-bar from '../search-bar/search-bar'
 
 export default {
   components: {
-    top,
+    search-bar,
     company
   },
   data () {
