@@ -5,23 +5,30 @@
 
 <script>
 
-/*
- * Contain all information about a company , but only shows the first row.
- */
+	import {Vue} from 'av-ts'
+	//  import keyValue from '../key-value/key-value'
 
-export default {
-  props: {
+	/*
+	 * Form to add information about the compay or create new company.
+	 */
 
-  	/*
- 	 * Contain all information about the company.
- 	 */
+	export default class Company extends Vue {
 
-    company: {
-      type: Object,
-      required: true
-    }
-  },
-  name: 'company'
-}
+	  // Data property
+	  range = 0
+
+	    // Lifecycle hook
+	  mounted () {
+	  }
+
+	    /*
+	     * the method add new key-value input to the company.
+	     */
+
+	  addKeyValue () {
+	    this.range += 1
+	  }
+
+	}
 
 </script>

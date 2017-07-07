@@ -4,42 +4,27 @@
 
 <script>
 
-import company from '../company/company'
-import searchBar from '../search-bar/search-bar'
+//  import company from '../company/company'
+//  import searchBar from '../search-bar/search-bar'
+import {Vue} from 'av-ts'
 
-/*
- * First page of app, you can search comapnies and see the results.
- */
+  /*
+   * First page of app, you can search comapnies and see the results.
+   */
 
-export default {
-  components: {
-    searchBar,
-    company
-  },
-  data () {
-    return {
-      companies: [
-        {id: 0, name: 'mercedes', category: 'cars'},
-        {id: 1, name: 'zalando', category: 'clothes'},
-        {id: 2, name: 'BMW', category: 'cars'}
-      ]
-    }
-  },
-  methods: {
+export default class SearchForm extends Vue {
 
-    /*
-     * When user click on edit button redirect to route /edit/:id. id identifies the company selected
-     */
+  companies = [{id: 0, name: 'mercedes', category: 'cars'}, {id: 1, name: 'zalando', category: 'clothes'}, {id: 2, name: 'BMW', category: 'cars'}]
 
-    edit: function (n) {
-      //  Vue.set(companies, name, "Z3");
-      //  this.$set(this.names[1], "apellido" , "Undefined");
-      //  this.companies.push({name: 'XXXX'})
-      //  this.$route.router.go('/new/' + n.id)
-      this.$router.push('/edit/' + n.id)
-      //  router.go('/new/' + n.id)
-    }
+  edit (n) {
+    //  Vue.set(companies, name, "Z3");
+    //  this.$set(this.names[1], "apellido" , "Undefined");
+    //  this.companies.push({name: 'XXXX'})
+    //  this.$route.router.go('/new/' + n.id)
+    this.$router.push('/edit/' + n.id)
+    //  router.go('/new/' + n.id)
   }
+
 }
 </script>
 

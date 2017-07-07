@@ -4,22 +4,16 @@
 
 <script>
 
-/*
- * Show information about the company selected.
- */
+import {Vue} from 'av-ts'
 
-export default {
-  props: {
+  /*
+   * Form to add information about the compay or create new company.
+   */
 
-    /*
-     * Company name.
-     */
+export default class KeyValue extends Vue {
 
-    name: {
-      type: String,
-      required: true
-    }
-  },
-  name: 'keyValue'
+  name = 'undefined'
+
 }
+
 </script>

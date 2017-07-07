@@ -1,36 +1,36 @@
-<style src="./add-form.scss"></style>
-
-<template src="./add-form.html"></template>
+@Component({
+  </q><template src="./add-form.html"></template>
+})
 
 <script>
 
-import keyValue from '../key-value/key-value'
+import {Vue} from 'av-ts'
 
 /*
  * Form to add information about the compay or create new company.
  */
 
-export default {
+export default class App extends Vue {
 
-  components: {
-    keyValue
-  },
-  name: 'addForm',
-  data () {
-    return {
-      range: 0
-    }
-  },
-  methods: {
+  // Data property
+  range = 0
+
+    // Lifecycle hook
+  mounted () {
+  }
 
     /*
      * the method add new key-value input to the company.
      */
 
-    addKeyValue: function () {
-      this.range += 1
-    }
+  addKeyValue () {
+    this.range += 1
   }
+
 }
 
 </script>
+
+
+<style src="./add-form.scss"></style>
+

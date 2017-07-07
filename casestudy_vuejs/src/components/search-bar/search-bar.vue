@@ -4,12 +4,17 @@
 
 <script>
 
+import {Vue} from 'av-ts'
+
   /*
-   * Form for search companies.
+   * Form to add information about the compay or create new company.
    */
 
-  export default {
-    name: 'search-bar'
-  }
+export default class SearchBar extends Vue {
+
+  name = 'undefined'
+
+}
+
 </script>
 
